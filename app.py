@@ -6,9 +6,9 @@ app.secret_key="supersecret"
 def login():
     if request.method=="POST":
        username = request.form.get("username")
-       passwoard = request.form.get("passwoard")
+       password = request.form.get("password")
 
-       if username=="admin" and passwoard=="123":
+       if username=="admin" and password=="123":
             session["user"]=username #store in session
             return redirect(url_for("welcome"))
        else:
@@ -18,7 +18,7 @@ def login():
              <h2>Login page</h2>
              <form method="POST">
              username:<input type="text" name="username"></br>
-             passwoard:<input type="text" name="passwoard"></br>
+             password:<input type="text" name="password"></br>
              <input type="submit" value="Login">
               </form>
 '''
