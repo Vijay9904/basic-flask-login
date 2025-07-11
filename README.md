@@ -7,7 +7,7 @@ It demonstrates how to handle user login using hardcoded credentials and Flask s
 
 ## 📝 Project File
 
-- `login_flask_basic.py` – Main Flask application file
+- `app.py` – Main Flask application file
 
 ---
 
